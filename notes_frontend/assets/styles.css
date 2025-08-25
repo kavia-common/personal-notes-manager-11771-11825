@@ -1,0 +1,7 @@
+:focus {
+  outline: none;
+}
+.using-keyboard :focus {
+  outline: 2px solid color-mix(in oklab, var(--color-primary) 80%, white);
+  outline-offset: 2px;
+}

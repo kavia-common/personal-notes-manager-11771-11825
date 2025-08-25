@@ -8,7 +8,11 @@ export default [
   {
     ignores: [
       ".nuxt/",
+      ".output/",
       "node_modules/",
+      "dist/",
+      "coverage/",
+      "**/*.mjs.map",
     ],
   },
   // TypeScript support
@@ -33,7 +37,7 @@ export default [
 
   // JS files config (same as before)
   {
-    files: ['**/*.js', '**/*.jsx'],
+    files: ['**/*.js', '**/*.jsx', '**/*.mjs'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
